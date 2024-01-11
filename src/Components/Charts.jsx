@@ -54,7 +54,7 @@ const Charts = () => {
         yAxisID: 'y1',
       },
       {
-        label: 'Emissions-2022',
+        label: 'Emissions-2023',
         data: emissions2023,
         backgroundColor: '#7790e4',
         borderColor: '#7790e4',
