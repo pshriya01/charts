@@ -1,23 +1,19 @@
 import logo from './logo.svg';
 import './App.css';
+import SideNav from './Components/SideNav';
+import Home from './Components/Home';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+       <div className="App" style={{display:"flex",margin:"0px",padding:"0px",width:"100%"}}>
+ <div style={{width:"249px"}}>
+ <SideNav />
+ </div>
+  <div style={{width:"calc(100% - 249px)"}}>
+  <Home />
+  </div>
+ </div>
     </div>
   );
 }
